@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Ubuntu:ital,wght@0,400;0,500;1,300&display=swap'); 
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar .max-width{
+    max-width: 13000px;
+    padding: 0 100px;
+    margin: auto;
+}
+/* navbar syling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999px;
+    padding: 15px 0;
+    background: bisque;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: bisque;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color:darkblue;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: crimson;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: darkblue;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+/* home section styling */
+.home{
+    display: flex;
+    background: url("img/cover.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 80px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 65px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-4{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.about .about-content .column{
+    width: 50%;
+}
+.about .about-content .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+}
+.about .about-content .right{
+    flex: 100%;
+}
+.home .home-content .text-3 span{
+    color:red;
+    font-weight: 800;
+}
+.home .home-content .text-4 span{
+    color:red;
+    font-weight: 800;
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+/* about section styling */ 
+.about{
+    display: flex;
+    background: url("img/GenshinImpact_Neuvillette_Wallpaper.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 900px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .max-width{
+    margin: auto 0 auto 100px;
+}
+section{
+    padding: 100px 0;
+
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content:"who am i";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content a:hover{
+    color: crimson;
+    background: none;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+
+/* hobby section styling */ 
+.hobby{
+    display: flex;
+    background: url("img/tasik.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 800px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section{
+    padding: 5px 0;
+}
+
+.hobby{
+    font-family: 'Poppins', sans-serif;
+}
+.hobby .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.hobby .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.hobby .title::after{
+    content:"what I do";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: blue;
+    transform: translateX(-50%);
+}
+.hobby .hobby-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hobby .hobby-content .left{
+    width: 45%;
+}
+.hobby .hobby-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hobby .hobby-content .right{
+    width: 55%;
+}
+.hobby .hobby-content .right .text{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+
+}
+.hobby .hobby-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.hobby .hobby-content a:hover{
+    color: crimson;
+    background: none;
+}
+.hobby .hobby-content .right p{
+    text-align: justify;
+}
+
+/* skills section styling */
+.skills{
+    display: flex;
+    background: url("img/usgs-rCP0aBxhK-M-unsplash.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 900px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.skills .max-width{
+    margin: auto 0 auto 100px;
+}
+section{
+    padding: 5% 0;
+}
+.skills{
+    font-family: 'Poppins', sans-serif;
+}
+.skills .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 90px;
+    padding-bottom: 3cap;
+    font-family: 'Ubuntu', sans-serif;
+}
+.skills .title::before{
+    content:"";
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.skills .title::after{
+    content:"what I learn";
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: yellow;
+    transform: translateX(-50%);
+}
+.skills .skills-content .text-1{
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: black;
+    border-radius: 6px;
+    border: 2px solid #fff;
+}
+.skills .skills-content .text-2{
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: black;
+    border-radius: 6px;
+    border: 2px solid #fff;
+}
+.skills .skills-content .column{
+    width: 50%;
+}
+.skills .skills-content .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+}
+.skills .skills-content .right{
+    flex: 100%;
+}
+.skills .skills-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content a:hover{
+    color: crimson;
+    background: none;
+}
+
+/* shop section styling */
+.shop{
+    display: flex;
+    background: url("img/kuro.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 900px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.shop .max-width{
+    margin: auto 0 auto 100px;
+}
+section{
+    padding: 5% 0;
+}
+.shop{
+    font-family: 'Poppins', sans-serif;
+}
+.shop .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 3cap;
+    font-family: 'Ubuntu', sans-serif;
+}
+.shop .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.shop .title::after{
+    content:"Let's Styling with me";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: green;
+    transform: translateX(-50%);
+
+}
+.shop .shop-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.shop .shop-content a:hover{
+    color: crimson;
+    background: none;
+}
+
+/* contact section styling */
+.contact{
+    display: flex;
+    background: url("img/dekan.jpg") center;
+    height: 100vh;
+    color: #fff;
+    min-height: 700px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .min-width{
+    margin: auto 0 auto 100px;
+}
+section{
+    padding: 5% 0;
+}
+.contact{
+    font-family: 'Poppins', sans-serif;
+}
+.contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 3cap;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .title::before{
+    content:"";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.contact .title::after{
+    content:"CONTACT ME";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+    background: green;
+    transform: translateX(-50%);
+
+ }
+.contact .contact-content a{
+        background: blue;
+        color: #fff;
+        padding: 12px 36px;
+        margin-top: 20px;
+        border-radius: 2px;
+        border: 2px solid black;
+        transition: all 0.3s ease;
+    }
+    .contact .contact-content a:hover{
+        color: blue;
+        background: none;
+    }
+
+
+/* gal section styling */
+.gal{
+    display: flex;
+    background: url("img/aesthetic-pixel-art-744owfpf74oukzn9.jpg") no-repeat;
+    height: 100vh;
+    color: #fff;
+    min-height: 900px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.gal .min-width{
+    margin: auto 0 auto 100px;
+}
+section{
+    padding: 5% 0;
+}
+.gal{
+    font-family: 'Poppins', sans-serif;
+}
+.gal .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 3cap;
+    font-family: 'Ubuntu', sans-serif;
+}
+.gal .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.gal .title::after{
+    content:"MY GALLERY";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 20px;
+    font-display: calc(red);
+    color: black;
+    padding: 5px;
+    background: green;
+    transform: translateX(-50%);
+}
+.gal .gal-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 15px;
+    padding: 12px 36px;
+    margin-top: 0px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.gal .gal-content a:hover{
+    color: crimson;
+    background: none;
+}
